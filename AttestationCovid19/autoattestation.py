@@ -30,7 +30,7 @@ class attestation(object):
   def destroy(self):
     self.driver.quit()
 
-  def build_attest(self, person, heure, date, outputdir, motifs):
+  def build_attest(self, person, heure, date, motifs):
     print ("Attestation pour : ", end="")
     print (person["prenom"],person["nom"],str(date),str(heure),motifs)
   
