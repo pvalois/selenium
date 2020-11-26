@@ -30,9 +30,9 @@ class attestation(object):
   def destroy(self):
     self.driver.quit()
 
-  def build_attest(self, person, heure, date, outputdir, motif):
+  def build_attest(self, person, heure, date, outputdir, motifs):
     print ("Attestation pour : ", end="")
-    print (person["prenom"],person["nom"],str(date),str(heure),motif)
+    print (person["prenom"],person["nom"],str(date),str(heure),motifs)
   
     self.driver.get("https://media.interieur.gouv.fr/deplacement-covid-19/")
     self.driver.find_element(By.ID, "field-firstname").send_keys(person["prenom"])
