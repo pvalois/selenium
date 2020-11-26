@@ -100,7 +100,7 @@ for user in users:
   for key in config[user]:
     demandeur[key]=config[user][key]
 
-  builder.build_attest(demandeur,heure=heure,date=date,motif=motifs)
+  builder.build_attest(demandeur,heure=heure,date=date,motifs=motifs)
   time.sleep(5)
   pdf_writer.addPage(fetch_page(tmpdir))
   
