@@ -1,4 +1,4 @@
-autoattestationi.py est un script qui utilise selenium pour simplifier les declarations de sortie covid19.
+autoattestation.py est un script qui utilise selenium pour simplifier les déclarations de sortie covid19.
 
 vous devez au préalable installer les dépendances : 
 
